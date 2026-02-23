@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+}
+
+.meals-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.meals-list {
+    font-size: 2rem;
+}
+
+.meals-image img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.meals-image {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    flex: 1;
+}
