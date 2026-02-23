@@ -17,13 +17,13 @@ function HeroSection() {
           >
             <div className="flex lg:flex-1">
               <a href="#" className="-m-1.5 p-1.5 flex items-center gap-2">
-                <span className="sr-only">Peshawar Recipes</span>
+                <span className="sr-only">Buner Recipes</span>
                 <div className="flex items-center justify-center w-10 h-10 bg-orange-500 rounded-full">
                   <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
                   </svg>
                 </div>
-                <span className="font-bold text-white text-sm hidden sm:inline">Peshawar Recipes</span>
+                <span className="font-bold text-white text-sm hidden sm:inline">Buner Recipes</span>
               </a>
             </div>
             <div className="flex lg:hidden">
@@ -80,13 +80,13 @@ function HeroSection() {
                 <el-dialog-panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
                   <div className="flex items-center justify-between">
                     <a href="#" className="-m-1.5 p-1.5 flex items-center gap-2">
-                      <span className="sr-only">Peshawar Recipes</span>
+                      <span className="sr-only">Buner Recipes</span>
                       <div className="flex items-center justify-center w-10 h-10 bg-orange-500 rounded-full">
                         <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
                         </svg>
                       </div>
-                      <span className="font-bold text-white text-sm">Peshawar Recipes</span>
+                      <span className="font-bold text-white text-sm">Buner Recipes</span>
                     </a>
                     <button
                       type="button"
@@ -173,10 +173,10 @@ function HeroSection() {
             {!hasSearched && (
               <div className="text-center">
                 <h1 className="heading-text text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
-                Welcome to Peshawar Recipes website
+                Welcome to Buner Recipes website
                 </h1>
                 <p className="para-text mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
-                  A warm Welcome to Peshawar Recipes! We are delighted to have you here, where we celebrate the rich culinary heritage of Peshawar and share our passion for delicious food
+                  A warm Welcome to Buner Recipes! We are delighted to have you here, where we celebrate the rich culinary heritage of Peshawar and share our passion for delicious food
                 </p>
               </div>
             )}
@@ -209,6 +209,104 @@ function HeroSection() {
           </div>
         </div>
       </div>
+
+      <footer className="bg-gray-950 border-t border-gray-800 py-12 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <div className="flex items-center justify-center w-10 h-10 bg-orange-500 rounded-full">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
+                  </svg>
+                </div>
+                <span className="font-bold text-white text-lg">Food Recipes</span>
+              </div>
+              <p className="text-gray-400 text-sm">Discover authentic Pakistani recipes with love and tradition.</p>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-white mb-4 text-sm uppercase tracking-wider">Quick Links</h3>
+              <ul className="space-y-2">
+                <li><Link to="/" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">Home</Link></li>
+                <li><Link to="/about" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">About Us</Link></li>
+                <li><Link to="/products" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">Products</Link></li>
+                <li><Link to="/features" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">Features</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-white mb-4 text-sm uppercase tracking-wider">Categories</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">Breakfast</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">Lunch</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">Dinner</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">Desserts</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-white mb-4 text-sm uppercase tracking-wider">Connect With Us</h3>
+              <p className="text-gray-400 text-sm mb-4">Follow us on social media</p>
+              <div className="flex gap-3">
+                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 3a.9.9 0 0 0-.9-.9h-4.2a4.1 4.1 0 0 0-4.1 4.1v3.2H7.9a.9.9 0 0 0-.9.9v3.2a.9.9 0 0 0 .9.9h2.9v8.1a.9.9 0 0 0 .9.9h3.3a.9.9 0 0 0 .9-.9v-8.1h2.9a.9.9 0 0 0 .9-.7l.5-3.2a.9.9 0 0 0-.9-1.1h-3.4V7.2a1.1 1.1 0 0 1 1.1-1.1H19a.9.9 0 0 0 .9-.9V3z"/>
+                  </svg>
+                </a>
+                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 9 5.5 9 5.5z"/>
+                  </svg>
+                </a>
+                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16.5 6.5h.01M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M2.5 12a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0Z" fill="white"></path>
+                  </svg>
+                </a>
+                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22.216 3.556a.75.75 0 0 0-1.06 1.06l-18.5 18.5a.75.75 0 1 0 1.06 1.06l18.5-18.5a.75.75 0 0 0 0-1.06zM3.75 2a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5zM20.75 18.75a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 py-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div>
+                <h4 className="font-semibold text-white mb-3 text-sm">About</h4>
+                <p className="text-gray-400 text-xs leading-relaxed">We bring you the authentic taste of Pakistani cuisine with traditional recipes passed down through generations.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-white mb-3 text-sm">Legal</h4>
+                <ul className="space-y-2">
+                  <li><a href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-xs">Privacy Policy</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-xs">Terms & Conditions</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-xs">Cookie Policy</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-white mb-3 text-sm">Contact Info</h4>
+                <p className="text-gray-400 text-xs mb-1">Email: info@fwdalam123.com</p>
+                <p className="text-gray-400 text-xs mb-1">Phone: +92 (0) 314 1523463</p>
+                <p className="text-gray-400 text-xs">Buner, Pakistan</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between">
+            <p className="text-gray-400 text-sm text-center md:text-left mb-4 md:mb-0">
+              2026 Food Recipes. All rights reserved.
+            </p>
+            <p className="text-orange-500 font-semibold text-sm text-center">
+              Created with love by Fawad Alam
+            </p>
+          </div>
+        </div>
+      </footer>
 
     </div>
   );
