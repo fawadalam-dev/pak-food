@@ -68,7 +68,7 @@ function Form({ onSearch, onSearchStateChange, meals: propsMeals }) {
           return (
             <div
               key={ml.idMeal}
-              className="w-36 bg-gray-800 rounded-lg overflow-hidden shadow-md border border-gray-700 flex flex-col h-full"
+              className="w-36 bg-gray-800 rounded-lg overflow-hidden shadow-md border border-gray-700 flex flex-col h-full transition-all duration-300 hover:shadow-2xl hover:scale-110 hover:border-orange-500 cursor-pointer"
             >
               <div className="relative h-32 overflow-hidden bg-gray-900">
                 <img

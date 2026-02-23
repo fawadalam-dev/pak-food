@@ -16,13 +16,14 @@ function HeroSection() {
             className="flex items-center justify-between p-6 lg:px-8"
           >
             <div className="flex lg:flex-1">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  src="./recipe-logo.jpg"
-                  alt="Logo"
-                  className="h-8 w-auto"
-                />
+              <a href="#" className="-m-1.5 p-1.5 flex items-center gap-2">
+                <span className="sr-only">Peshawar Recipes</span>
+                <div className="flex items-center justify-center w-10 h-10 bg-orange-500 rounded-full">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
+                  </svg>
+                </div>
+                <span className="font-bold text-white text-sm hidden sm:inline">Peshawar Recipes</span>
               </a>
             </div>
             <div className="flex lg:hidden">
@@ -51,21 +52,21 @@ function HeroSection() {
               </button>
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
-              <Link to="/" className="text-sm/6 font-semibold text-white">
+              <Link to="/" className="text-sm/6 font-semibold text-white transition-colors duration-300 hover:text-orange-500 border-b-2 border-transparent hover:border-orange-500">
                 Home
               </Link>
-              <Link to="/about" className="text-sm/6 font-semibold text-white">
+              <Link to="/about" className="text-sm/6 font-semibold text-white transition-colors duration-300 hover:text-orange-500 border-b-2 border-transparent hover:border-orange-500">
                 About
               </Link>
-              <Link to="/products" className="text-sm/6 font-semibold text-white">
+              <Link to="/products" className="text-sm/6 font-semibold text-white transition-colors duration-300 hover:text-orange-500 border-b-2 border-transparent hover:border-orange-500">
                 Product
               </Link>
-              <Link to="/features" className="text-sm/6 font-semibold text-white">
+              <Link to="/features" className="text-sm/6 font-semibold text-white transition-colors duration-300 hover:text-orange-500 border-b-2 border-transparent hover:border-orange-500">
                 Feature
               </Link>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <Link to="/login" className="text-sm/6 font-semibold text-white">
+              <Link to="/login" className="text-sm/6 font-semibold text-white transition-colors duration-300 hover:text-orange-500">
                 Log in <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>
@@ -78,13 +79,14 @@ function HeroSection() {
               <div tabIndex={0} className="fixed inset-0 focus:outline-none">
                 <el-dialog-panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
                   <div className="flex items-center justify-between">
-                    <a href="#" className="-m-1.5 p-1.5">
-                      <span className="sr-only">Your Company</span>
-                      <img
-                        src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                        alt=""
-                        className="h-8 w-auto"
-                      />
+                    <a href="#" className="-m-1.5 p-1.5 flex items-center gap-2">
+                      <span className="sr-only">Peshawar Recipes</span>
+                      <div className="flex items-center justify-center w-10 h-10 bg-orange-500 rounded-full">
+                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
+                        </svg>
+                      </div>
+                      <span className="font-bold text-white text-sm">Peshawar Recipes</span>
                     </a>
                     <button
                       type="button"
@@ -115,25 +117,25 @@ function HeroSection() {
                       <div className="space-y-2 py-6">
                         <Link
                           to="/"
-                          className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
+                          className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white transition-colors duration-300 hover:text-orange-500 hover:bg-white/5"
                         >
                           Home
                         </Link>
                         <Link
                           to="/about"
-                          className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
+                          className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white transition-colors duration-300 hover:text-orange-500 hover:bg-white/5"
                         >
                           About
                         </Link>
                         <Link
                           to="/products"
-                          className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
+                          className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white transition-colors duration-300 hover:text-orange-500 hover:bg-white/5"
                         >
                           Product
                         </Link>
                         <Link
                           to="/features"
-                          className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
+                          className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white transition-colors duration-300 hover:text-orange-500 hover:bg-white/5"
                         >
                           Feature
                         </Link>
@@ -141,7 +143,7 @@ function HeroSection() {
                       <div className="py-6">
                         <Link
                           to="/login"
-                          className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5"
+                          className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white transition-colors duration-300 hover:text-orange-500 hover:bg-white/5"
                         >
                           Log in
                         </Link>
