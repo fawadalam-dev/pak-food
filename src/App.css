@@ -8,11 +8,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-.meals-list {
+.meals-list{
     font-size: 2rem;
 }
-
 .meals-image img {
     position: relative;
     width: 200px;
