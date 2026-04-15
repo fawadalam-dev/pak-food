@@ -241,7 +241,6 @@ function HeroSection() {
                 <li><a href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">Breakfast</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">Lunch</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">Dinner</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">Desserts</a></li>
               </ul>
             </div>
 
@@ -278,7 +277,6 @@ function HeroSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
                 <h4 className="font-semibold text-white mb-3 text-sm">About</h4>
-                <p className="text-gray-400 text-xs leading-relaxed">We bring you the authentic taste of Pakistani cuisine with traditional recipes passed down through generations.</p>
               </div>
               <div>
                 <h4 className="font-semibold text-white mb-3 text-sm">Legal</h4>
@@ -290,8 +288,8 @@ function HeroSection() {
               </div>
               <div>
                 <h4 className="font-semibold text-white mb-3 text-sm">Contact Info</h4>
-                <p className="text-gray-400 text-xs mb-1">Email: info@fwdalam123.com</p>
-                <p className="text-gray-400 text-xs mb-1">Phone: +92 (0) 314 1523463</p>
+                <p className="text-gray-400 text-xs mb-1">Email: fawadalam5813@.com</p>
+                <p className="text-gray-400 text-xs mb-1">Phone: +92 314 1523463</p>
                 <p className="text-gray-400 text-xs">Buner, Pakistan</p>
               </div>
             </div>
@@ -299,10 +297,10 @@ function HeroSection() {
 
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between">
             <p className="text-gray-400 text-sm text-center md:text-left mb-4 md:mb-0">
-              2026 Food Recipes. All rights reserved.
+              2026 Food Recipes
             </p>
             <p className="text-orange-500 font-semibold text-sm text-center">
-              Created with love by Fawad Alam
+              Created by Fawad Alam Dev
             </p>
           </div>
         </div>
