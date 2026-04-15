@@ -29,7 +29,7 @@ const products = [
         description: "Rich and aromatic karahi cooked in a thick tomato and spice gravy.",
         price: 14.5,
         image:
-            "https://images.unsplash.com/photo-1604908177522-1c186b1a58f3?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1694579740719-0e601c5d2437?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGFraXN0YW5pJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D",
     },
     {
         title: "Sajji Special",
