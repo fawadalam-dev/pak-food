@@ -8,7 +8,7 @@ const products = [
         description: "A spicy, flavorful kebab made with premium beef and traditional spices.",
         price: 12.99,
         image:
-            "https://images.unsplash.com/photo-1571091718767-18d674f9625d?auto=format&fit=crop&w=800&q=80",
+            "https://commons.wikimedia.org/wiki/File:Chapli_Kebab.jpg",
     },
     {
         title: "Chicken Burger",
@@ -169,14 +169,16 @@ function Product() {
                                         <p>${item.price.toFixed(2)} x {item.quantity}</p>
                                     </div>
                                     <div className="cart-item-actions">
-                                        <button onClick={() => updateQuantity(item.title, -1)}>-</button>
-                                        <span>{item.quantity}</span>
-                                        <button onClick={() => updateQuantity(item.title, 1)}>+</button>
+                                        <div className="quantity-controls">
+                                            <button onClick={() => updateQuantity(item.title, -1)}>-</button>
+                                            <span>{item.quantity}</span>
+                                            <button onClick={() => updateQuantity(item.title, 1)}>+</button>
+                                        </div>
                                         <button
                                             className="remove-button"
                                             onClick={() => removeFromCart(item.title)}
                                         >
-                                            ❌
+                                            Remove
                                         </button>
                                     </div>
                                 </div>
