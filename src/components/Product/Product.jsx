@@ -7,26 +7,36 @@ const products = [
     title: "Buner Chapli Kebab",
     description: "A spicy, flavorful kebab made with premium beef and traditional spices.",
     price: 12.99,
+    image:
+      "https://images.unsplash.com/photo-1571091718767-18d674f9625d?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Chicken Burger",
     description: "Juicy grilled chicken burger served with fresh lettuce and sauce.",
     price: 9.49,
+    image:
+      "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Fried Rice",
     description: "A delicious portion of rice with vegetables, egg, and special seasonings.",
     price: 8.75,
+    image:
+      "https://images.unsplash.com/photo-1604908177522-1c186b1a58f3?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Peshawari Karahi",
     description: "Rich and aromatic karahi cooked in a thick tomato and spice gravy.",
     price: 14.5,
+    image:
+      "https://images.unsplash.com/photo-1604908177522-1c186b1a58f3?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Sajji Special",
     description: "Slow-roasted whole chicken seasoned with salt and native herbs.",
     price: 18.0,
+    image:
+      "https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=800&q=80",
   },
 ];
 
@@ -34,6 +44,12 @@ function Product() {
   const [cart, setCart] = useState([]);
   const [paymentMethod, setPaymentMethod] = useState("Cash on Delivery");
   const [orderMessage, setOrderMessage] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredProducts = products.filter((product) =>
+    product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    product.description.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   const addToCart = (product) => {
     setOrderMessage("");
@@ -87,12 +103,26 @@ function Product() {
       <div className="product-hero">
         <h1>Featured Products</h1>
         <p>Choose your favorites, add them to the cart, and checkout securely.</p>
+        <div className="search-container">
+          <input
+            type="text"
+            placeholder="Search for products..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="search-input"
+          />
+        </div>
       </div>
 
       <div className="product-layout">
         <div className="product-grid">
-          {products.map((product) => (
+          {filteredProducts.map((product) => (
             <article className="product-card" key={product.title}>
+              <img
+                className="product-image"
+                src={product.image}
+                alt={product.title}
+              />
               <h2>{product.title}</h2>
               <p>{product.description}</p>
               <div className="product-meta">
