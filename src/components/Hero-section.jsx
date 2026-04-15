@@ -195,9 +195,86 @@ function HeroSection() {
               </div>
             )}
           </div>
-          <div
-            aria-hidden="true"
-            className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+
+          {/* Features Section */}
+          <div className="py-24 sm:py-32">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+              <div className="mx-auto max-w-2xl text-center">
+                <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                  Everything you need for delicious food ordering
+                </h2>
+                <p className="mt-6 text-lg leading-8 text-gray-300">
+                  Discover our comprehensive food ordering system with advanced features designed for the best user experience.
+                </p>
+              </div>
+              <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+                <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+                  <div className="flex flex-col">
+                    <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
+                      <svg className="h-5 w-5 flex-none text-orange-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clipRule="evenodd" />
+                      </svg>
+                      Search & Discover
+                    </dt>
+                    <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
+                      <p className="flex-auto">
+                        Real-time search functionality to find your favorite dishes instantly. Browse our curated collection of authentic Pakistani cuisine.
+                      </p>
+                      <p className="mt-6">
+                        <Link to="/products" className="text-sm font-semibold leading-6 text-orange-500">
+                          Browse products <span aria-hidden="true">→</span>
+                        </Link>
+                      </p>
+                    </dd>
+                  </div>
+                  <div className="flex flex-col">
+                    <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
+                      <svg className="h-5 w-5 flex-none text-orange-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clipRule="evenodd" />
+                      </svg>
+                      Secure Checkout
+                    </dt>
+                    <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
+                      <p className="flex-auto">
+                        Multiple payment options including cash on delivery, credit cards, and online payments. Your orders are processed securely.
+                      </p>
+                      <p className="mt-6">
+                        <Link to="/products" className="text-sm font-semibold leading-6 text-orange-500">
+                          Start ordering <span aria-hidden="true">→</span>
+                        </Link>
+                      </p>
+                    </dd>
+                  </div>
+                  <div className="flex flex-col">
+                    <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
+                      <svg className="h-5 w-5 flex-none text-orange-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
+                        <path fillRule="evenodd" d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z" clipRule="evenodd" />
+                      </svg>
+                      Fast Delivery
+                    </dt>
+                    <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
+                      <p className="flex-auto">
+                        Quick and reliable delivery service. Track your orders in real-time and enjoy hot, fresh food delivered to your doorstep.
+                      </p>
+                      <p className="mt-6">
+                        <Link to="/login" className="text-sm font-semibold leading-6 text-orange-500">
+                          Sign up <span aria-hidden="true">→</span>
+                        </Link>
+                      </p>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default HeroSection;
           >
             <div
               style={{

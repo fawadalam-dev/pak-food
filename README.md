@@ -1,16 +1,110 @@
-# React + Vite
+# Pak-Food: Buner Recipes Ordering System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based food ordering application featuring traditional Pakistani cuisine from Buner, built with Vite for fast development and deployment.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🍽️ Food Ordering System
+- **Product Catalog**: Browse a curated selection of authentic Pakistani dishes including Buner Chapli Kebab, Chicken Burger, Fried Rice, Peshawari Karahi, and Sajji Special
+- **Product Images**: High-quality food images for each menu item
+- **Pricing**: Clear pricing for all items with real-time total calculations
 
-## React Compiler
+### 🔍 Search Functionality
+- **Real-time Search**: Search products by name or description
+- **Instant Filtering**: Results update immediately as you type
+- **Seamless Integration**: Add items directly from search results to cart
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛒 Cart Management
+- **Add to Cart**: One-click addition of products to cart
+- **Quantity Control**: Increase or decrease item quantities
+- **Item Removal**: Remove items from cart with a single click
+- **Price Calculation**: Automatic calculation of individual item prices and total cost
 
-## Expanding the ESLint configuration
+### 💳 Checkout System
+- **Multiple Payment Methods**:
+  - Cash on Delivery
+  - Credit/Debit Card
+  - Online Payment
+  - Mobile Wallet
+- **Order Confirmation**: Instant feedback after placing an order
+- **Cart Reset**: Automatic cart clearing after successful checkout
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🎨 User Interface
+- **Responsive Design**: Optimized for desktop and mobile devices
+- **Dark Theme**: Modern dark UI with orange accents
+- **Smooth Navigation**: Easy routing between home and products pages
+- **Interactive Elements**: Hover effects and transitions for better UX
+
+## Getting Started
+
+### Prerequisites
+- Node.js (version 16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd pak-food
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173` to access the home page.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Hero-section.jsx    # Home page with navigation and intro
+│   ├── Product/
+│   │   ├── Product.jsx     # Main product page with cart and checkout
+│   │   └── Product.css     # Styling for product components
+│   ├── Login.jsx           # Login page
+│   └── Form.jsx            # Search form for recipes (home page)
+├── App.jsx                 # Main app component with routing
+├── main.jsx                # App entry point
+└── index.css               # Global styles
+```
+
+## Technologies Used
+
+- **React**: Frontend framework for building user interfaces
+- **React Router**: Client-side routing for navigation
+- **Vite**: Fast build tool and development server
+- **Tailwind CSS**: Utility-first CSS framework for styling
+- **ESLint**: Code linting for consistent code quality
+
+## Navigation
+
+- **Home Page** (`/`): Introduction to Buner Recipes with recipe search
+- **Products Page** (`/products`): Full food ordering system
+- **Login Page** (`/login`): User authentication
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run tests and linting
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
