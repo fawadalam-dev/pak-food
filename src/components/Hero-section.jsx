@@ -7,7 +7,7 @@ function HeroSection() {
   const [hasSearched, setHasSearched] = useState(false);
 
   return (
-    <div className="bg-gray-900 min-h-screen text-white">
+    <div className="bg-black min-h-screen text-white">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8">
           <Link to="/" className="flex items-center gap-2">

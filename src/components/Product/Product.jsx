@@ -3,13 +3,7 @@ import { Link } from "react-router-dom";
 import "./Product.css";
 
 const products = [
-    {
-        title: "Buner Chapli Kebab",
-        description: "A spicy, flavorful kebab made with premium beef and traditional spices.",
-        price: 12.99,
-        image:
-            "https://images.unsplash.com/photo-1571091718767-18d674f9625d?auto=format&fit=crop&w=800&q=80",
-    },
+   
     {
         title: "Chicken Burger",
         description: "Juicy grilled chicken burger served with fresh lettuce and sauce.",
@@ -45,16 +39,65 @@ const products = [
         image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=800&q=80",
     },
     {
-        title: "Chicken Burger",
-        description: "Crispy fried chicken fillet served with lettuce, cheese, and special sauce in a soft bun.",
-        price: 6.5,
-        image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
-    },
-    {
         title: "Chicken Shawarma",
         description: "Middle Eastern wrap filled with spiced chicken, garlic sauce, and fresh vegetables.",
         price: 5.5,
         image: "https://images.unsplash.com/photo-1606756790138-261d2b21cd75?auto=format&fit=crop&w=800&q=80",
+    },
+    {
+        title: "Nihari",
+        description: "Slow-cooked beef stew with rich spices, served with naan and lemon.",
+        price: 16.99,
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+    },
+    {
+        title: "Chicken Tikka",
+        description: "Marinated chicken pieces grilled to perfection with yogurt and spices.",
+        price: 11.5,
+        image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=800&q=80",
+    },
+    {
+        title: "Aloo Keema",
+        description: "Minced beef cooked with potatoes and traditional Pakistani spices.",
+        price: 10.75,
+        image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?auto=format&fit=crop&w=800&q=80",
+    },
+    {
+        title: "Fish Masala",
+        description: "Fresh fish fillets cooked in a spicy tomato-based curry sauce.",
+        price: 13.25,
+        image: "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80",
+    },
+    {
+        title: "Daal Makhani",
+        description: "Creamy black lentils slow-cooked with butter, cream, and aromatic spices.",
+        price: 9.99,
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+    },
+    {
+        title: "Paneer Tikka Masala",
+        description: "Cottage cheese cubes in a rich, creamy tomato-based curry sauce.",
+        price: 12.5,
+        image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=800&q=80",
+    },
+    {
+        title: "Mutton Korma",
+        description: "Tender mutton pieces cooked in a rich, creamy yogurt-based curry.",
+        price: 15.75,
+        image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    },
+    {
+        title: "Vegetable Biryani",
+        description: "Aromatic basmati rice cooked with mixed vegetables and saffron.",
+        price: 11.99,
+        image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=800&q=80",
+    },
+     {
+        title: "Buner Chapli Kebab",
+        description: "A spicy, flavorful kebab made with premium beef and traditional spices.",
+        price: 12.99,
+        image:
+            "https://images.unsplash.com/photo-1571091718767-18d674f9625d?auto=format&fit=crop&w=800&q=80",
     },
 ];
 
@@ -63,11 +106,16 @@ function Product() {
     const [paymentMethod, setPaymentMethod] = useState("Cash on Delivery");
     const [orderMessage, setOrderMessage] = useState("");
     const [searchQuery, setSearchQuery] = useState("");
+    const [searchInput, setSearchInput] = useState("");
 
     const filteredProducts = products.filter((product) =>
         product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         product.description.toLowerCase().includes(searchQuery.toLowerCase())
     );
+
+    const handleSearch = () => {
+        setSearchQuery(searchInput);
+    };
 
     const addToCart = (product) => {
         setOrderMessage("");
@@ -125,10 +173,16 @@ function Product() {
                     <input
                         type="text"
                         placeholder="Search for products..."
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
+                        value={searchInput}
+                        onChange={(e) => setSearchInput(e.target.value)}
                         className="search-input"
                     />
+                    <button
+                        onClick={handleSearch}
+                        className="search-button"
+                    >
+                        Search
+                    </button>
                 </div>
             </div>
 

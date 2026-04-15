@@ -53,7 +53,7 @@ function Form({ onSearch, onSearchStateChange, meals: propsMeals }) {
               }}
               value={usermeal}
             />
-            <button type="submit" disabled={loading} className="px-10 py-4 bg-orange-500 hover:bg-orange-600 disabled:bg-gray-500 text-black font-bold text-lg transition duration-200">
+            <button type="submit" disabled={loading} className="px-10 py-4 bg-black hover:bg-gray-800 disabled:bg-gray-500 text-white font-bold text-lg transition duration-200">
               {loading ? "Searching..." : "Search"}
             </button>
           </div>
