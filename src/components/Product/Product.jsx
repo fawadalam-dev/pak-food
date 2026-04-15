@@ -22,7 +22,7 @@ const products = [
         description: "A delicious portion of rice with vegetables, egg, and special seasonings.",
         price: 8.75,
         image:
-            "https://unsplash.com/photos/a-table-topped-with-plates-of-food-and-bowls-of-rice-UcyRc8jeQNg",
+            "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80",
     },
     {
         title: "Peshawari Karahi",
