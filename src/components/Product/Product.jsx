@@ -8,7 +8,7 @@ const products = [
         description: "A spicy, flavorful kebab made with premium beef and traditional spices.",
         price: 12.99,
         image:
-            "https://commons.wikimedia.org/wiki/File:Chapli_Kebab.jpg",
+            "https://images.unsplash.com/photo-1571091718767-18d674f9625d?auto=format&fit=crop&w=800&q=80",
     },
     {
         title: "Chicken Burger",
