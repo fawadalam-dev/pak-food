@@ -176,7 +176,7 @@ function Product() {
                                             className="remove-button"
                                             onClick={() => removeFromCart(item.title)}
                                         >
-                                            Remove
+                                            ❌
                                         </button>
                                     </div>
                                 </div>
